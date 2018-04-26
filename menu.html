@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>menu</title>
+<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+	<h1>前端学院</h1>
+	<hr/>
+	<div>
+   		<button>切换样式</button>
+    </div>
+   <script>
+   		var btn = document.getElementsByTagName("button")[0];
+		btn.onclick = function(){
+			var h1 = document.getElementsByTagName("h1")[0];
+			var hr = document.getElementsByTagName("hr")[0];
+			if(h1.className == ""){
+				h1.className = "active";
+				}else{
+					h1.className = "";
+					}
+			if(hr.className == ""){
+				hr.className = "active";
+				}else{
+					hr.className = "";
+					}
+			}
+   </script>
+</body>
+</html>
